@@ -12,7 +12,7 @@ namespace WormDelegateApp
 
         public static double pi = 3.1415;
 
-        public delegate double  OperationDelegate(double pi);
+        public delegate double  OperationDelegate(double value);
         public static double countS(double radius )
         {
             double resultS = pi * Math.Pow(radius, 2);
@@ -38,13 +38,5 @@ namespace WormDelegateApp
             double resultD = (2 * radius);
             return resultD;
         }
-        //Dictionary<string, OperationDelegate> operat = new Dictionary<string, OperationDelegate>()
-        //{
-        //    ["countS"] = (radius, pi) => (pi * Math.Pow(radius, 2)),
-        //    ["countL"] = (radius, pi) => (2 * pi * radius),
-        //    ["countP"] = (radius, pi) => (4 * pi * Math.Pow(radius, 2)),
-        //    ["countV"] = (radius, pi) => ((4 / 3) * pi * Math.Pow(radius, 3)),
-        //    ["countD"] = (radius, pi) => (2 * radius),
-        //};
     }
 }
